@@ -1,0 +1,13 @@
+language: objective-c
+
+branches:
+ only:
+ - master
+
+xcode_project: JustJson.xcodeproj
+xcode_scheme: iOS Example
+osx_image: xcode8
+xcode_sdk: iphonesimulator10.0
+
+script:
+- xcodebuild clean build test -project JustJson.xcworkspace -scheme "iOS Example"
