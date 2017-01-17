@@ -9,9 +9,9 @@ Pod::Spec.new do |s|
   Ole Begemann gave a good example on how to make it.
                        DESC
   s.requires_arc = true
-  s.homepage         = 'https://github.com/fattomhk/JustJson'
+  s.homepage         = 'https://github.com/fattomhk/JustJSON'
   s.authors = { 'PROJECT_OWNER' => 'fattomhk@gmail.com' }
-  s.source = { :git => 'https://github.com/fattomhk/JustJson.git', :tag => s.version }
+  s.source = { :git => 'https://github.com/fattomhk/JustJSON.git', :tag => s.version }
   s.ios.deployment_target = '8.0'
   s.source_files = 'Source/*.swift'
 end
