@@ -11,6 +11,7 @@ import XCTest
 
 class JustJsonTests: XCTestCase {
     var dict: [String: Any] = [:]
+    var jsonStr: String?
     
     override func setUp() {
         super.setUp()
@@ -35,6 +36,8 @@ class JustJsonTests: XCTestCase {
                 "value" : ["1", "2", "3", "5", "7"]
             ]
         ]
+        
+        jsonStr = dict.toJSONStr()
         
     }
     
@@ -108,6 +111,14 @@ class JustJsonTests: XCTestCase {
         self.measure {
             for _ in 0...10000 {
                 let _ = self.dict.toJSONStr()
+            }
+        }
+    }
+    
+    func testPerformanceToDict() {
+        self.measure {
+            for _ in 0...10000 {
+                let _ = self.jsonStr?.toDictionary()
             }
         }
     }
