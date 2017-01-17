@@ -1,6 +1,6 @@
 # JustJson
 
-[![CI Status](http://img.shields.io/travis/fattomhk/JustJson.svg?style=flat)](https://travis-ci.org/fattomhk/JustJson)
+[![CI Status](http://img.shields.io/travis/fattomhk/JustJSON.svg?style=flat)](https://travis-ci.org/fattomhk/JustJSON)
 [![Version](https://img.shields.io/cocoapods/v/JustJson.svg?style=flat)](https://cocoapods.org/pods/JustJson)
 [![License](https://img.shields.io/cocoapods/l/JustJson.svg?style=flat)](https://cocoapods.org/pods/JustJson)
 [![Platform](https://img.shields.io/cocoapods/p/JustJson.svg?style=flat)](https://cocoapods.org/pods/JustJson)
