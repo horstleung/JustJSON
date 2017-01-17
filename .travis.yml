@@ -4,7 +4,7 @@ branches:
  only:
  - master
 
-xcode_project: JustJson.xcodeproj
+xcode_project: JustJson.xcworkspace
 xcode_scheme: iOS Example
 osx_image: xcode8
 xcode_sdk: iphonesimulator10.0
