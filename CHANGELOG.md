@@ -1,11 +1,10 @@
 # Change Log
 ## [Master](https://github.com/fattomhk/JustJSON)
 
-## [0.1.0](https://github.com/SwiftyJSON/SwiftyJSON/tree/2.2.0) (2017-01-16)
-Init
-
+## [0.1.1](https://github.com/fattomhk/JustJSON/tree/0.1.1) (2017-01-17)
 ### Added
+Added some subscripts for getting numbers from Dictionary
 
-### Changed
 
-### Removed
+## [0.1.0](https://github.com/fattomhk/JustJSON/tree/0.1.0) (2017-01-16)
+Init

@@ -34,7 +34,10 @@ class JustJsonTests: XCTestCase {
             ],
             "arrayDict" : [
                 "value" : ["1", "2", "3", "5", "7"]
-            ]
+            ],
+            "int" : "1",
+            "float" : Float(1.1),
+            "double" : 2.11
         ]
         
         jsonStr = dict.toJSONStr()
@@ -51,6 +54,21 @@ class JustJsonTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         let val = dict[keyPath: "translations.characters.Gyro Gearloose"] as? String
         XCTAssert(val == "Daniel Düsentrieb")
+    }
+    
+    func testSimpleGetInt() {
+        let val = dict[int: "int"]
+        XCTAssert(val == Int(1))
+    }
+    
+    func testSimpleGetFloat() {
+        let val = dict[float: "float"]
+        XCTAssert(val == Float(1.1))
+    }
+    
+    func testSimpleGetDouble() {
+        let val = dict[double: "double"]
+        XCTAssert(val == Double(2.11))
     }
     
     func testSimpleEdit() {
