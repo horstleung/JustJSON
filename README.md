@@ -4,9 +4,9 @@
 [![Version](https://img.shields.io/cocoapods/v/JustJson.svg?style=flat)](https://cocoapods.org/pods/JustJson)
 [![License](https://img.shields.io/cocoapods/l/JustJson.svg?style=flat)](https://cocoapods.org/pods/JustJson)
 [![Platform](https://img.shields.io/cocoapods/p/JustJson.svg?style=flat)](https://cocoapods.org/pods/JustJson)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-<a href="https://placehold.it/400?text=Screen+shot"><img width=200 height=200 src="https://placehold.it/400?text=Screen+shot" alt="Screenshot" /></a>
+<!--
+<a href="https://placehold.it/400?text=Screen+shot"><img width=200 height=200 src="https://placehold.it/400?text=Screen+shot" alt="Screenshot" /></a> -->
 
 
 ## Example
