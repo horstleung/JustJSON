@@ -40,6 +40,44 @@ Then, run the following command:
 $ pod install
 ```
 
+## Example
+### Convert to Dictionary from JSON string
+```swift
+let dict = jsonStr.toDictionary()
+```
+
+### Convert Dictionary [String: Any] to JSON string
+```swift
+let jsonString = dict.toJSONStr()
+```
+
+### Get Data from Dictionary
+```swift
+let foo = dict[keyPath: "first.second.abc 123"] //return an optional Any
+```
+
+```swift
+let foo = dict[string: "first.second.abc 123"] //return an optional String
+```
+
+```swift
+let foo = dict[dict: "first.second.abc 123"] //return an optional Dictionart
+```
+
+```swift
+let foo = dict[array: "first.second.abc 123"] //return an optional Array
+```
+
+### Looping
+```swift
+for foo in dict[arrayValue: "first.second.foos"] {
+  print(foo)
+}
+```
+
+## More Exampes:
+[Test case](https://github.com/fattomhk/JustJSON/blob/master/Tests/JustJsonTests.swift)
+
 ## Author
 
 Horst Leung
