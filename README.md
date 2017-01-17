@@ -1,9 +1,9 @@
 # JustJson
 
-[![CI Status](http://img.shields.io/travis/fattomhk/JustJSON.svg?style=flat)](https://travis-ci.org/fattomhk/JustJSON)
-[![Version](https://img.shields.io/cocoapods/v/JustJson.svg?style=flat)](https://cocoapods.org/pods/JustJson)
-[![License](https://img.shields.io/cocoapods/l/JustJson.svg?style=flat)](https://cocoapods.org/pods/JustJson)
-[![Platform](https://img.shields.io/cocoapods/p/JustJson.svg?style=flat)](https://cocoapods.org/pods/JustJson)
+[![CI Status](http://img.shields.io/travis/fattomhk/JustJson.svg?style=flat)](https://travis-ci.org/fattomhk/JustJSON)
+[![Version](https://img.shields.io/cocoapods/v/JustJSON.svg?style=flat)](https://cocoapods.org/pods/JustJSON)
+[![License](https://img.shields.io/cocoapods/l/JustJSON.svg?style=flat)](https://cocoapods.org/pods/JustJSON)
+[![Platform](https://img.shields.io/cocoapods/p/JustJSON.svg?style=flat)](https://cocoapods.org/pods/JustJSON)
 
 <!--
 <a href="https://placehold.it/400?text=Screen+shot"><img width=200 height=200 src="https://placehold.it/400?text=Screen+shot" alt="Screenshot" /></a> -->
