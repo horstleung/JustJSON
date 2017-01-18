@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CBB0DD781E2F172F00069E2D /* JJMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0DD771E2F172F00069E2D /* JJMapper.swift */; };
+		CBB0DD7B1E2F3BF900069E2D /* JJMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0DD791E2F3BCF00069E2D /* JJMapperTests.swift */; };
 		D9899DD41DF4A092008766B5 /* JustJson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9899DCA1DF4A092008766B5 /* JustJson.framework */; };
 		D9899DD91DF4A093008766B5 /* JustJsonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9899DD81DF4A093008766B5 /* JustJsonTests.swift */; };
 		D9899DDB1DF4A093008766B5 /* JustJson.h in Headers */ = {isa = PBXBuildFile; fileRef = D9899DCD1DF4A092008766B5 /* JustJson.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,6 +26,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CBB0DD771E2F172F00069E2D /* JJMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJMapper.swift; sourceTree = "<group>"; };
+		CBB0DD791E2F3BCF00069E2D /* JJMapperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJMapperTests.swift; sourceTree = "<group>"; };
 		D9899DCA1DF4A092008766B5 /* JustJson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JustJson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9899DCD1DF4A092008766B5 /* JustJson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JustJson.h; sourceTree = "<group>"; };
 		D9899DCE1DF4A092008766B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 				D9899DE51DF4A372008766B5 /* JustJson.swift */,
 				D9899DCD1DF4A092008766B5 /* JustJson.h */,
 				D9899DCE1DF4A092008766B5 /* Info.plist */,
+				CBB0DD771E2F172F00069E2D /* JJMapper.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -84,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				D9899DD81DF4A093008766B5 /* JustJsonTests.swift */,
+				CBB0DD791E2F3BCF00069E2D /* JJMapperTests.swift */,
 				D9899DDA1DF4A093008766B5 /* Info.plist */,
 			);
 			path = Tests;
@@ -202,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBB0DD781E2F172F00069E2D /* JJMapper.swift in Sources */,
 				D9899DE61DF4A372008766B5 /* JustJson.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBB0DD7B1E2F3BF900069E2D /* JJMapperTests.swift in Sources */,
 				D9899DD91DF4A093008766B5 /* JustJsonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

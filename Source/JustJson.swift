@@ -189,7 +189,6 @@ public extension Dictionary where Key: StringProtocol {
         get { return self[keyPath: keyPath] as? [Key: Any] }
         set { self[keyPath: keyPath] = newValue }
     }
-    
    
 }
 
@@ -217,6 +216,7 @@ public extension String {
         return nil
     }
 }
+
 
 
 
