@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'JustJson'
-  s.version = '0.1.1'
+  s.version = '0.1.2'
   s.license = { :type => 'MIT', :file => 'LICENSE' }
   s.summary = 'JustJson is a simple project for handling JSON with keypaths. Copying the logic from https://oleb.net/blog/2017/01/dictionary-key-paths/'
   s.description      = <<-DESC

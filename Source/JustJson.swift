@@ -113,6 +113,11 @@ public extension Dictionary where Key: StringProtocol {
         set { self[keyPath: keyPath] = newValue }
     }
     
+    subscript(stringValue keyPath: KeyPath) -> String {
+        get { return self[string: keyPath] ?? "" }
+        set { self[keyPath: keyPath] = newValue }
+    }
+    
     subscript(int keyPath: KeyPath) -> Int? {
         get {
             if let str = self[keyPath: keyPath] as? String {
@@ -187,6 +192,11 @@ public extension Dictionary where Key: StringProtocol {
     
     subscript(dict keyPath: KeyPath) -> [Key: Any]? {
         get { return self[keyPath: keyPath] as? [Key: Any] }
+        set { self[keyPath: keyPath] = newValue }
+    }
+    
+    subscript(dictValue keyPath: KeyPath) -> [Key: Any]? {
+        get { return self[dict: keyPath] ?? [Key: Any]() }
         set { self[keyPath: keyPath] = newValue }
     }
    

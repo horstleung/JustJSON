@@ -75,6 +75,73 @@ for foo in dict[arrayValue: "first.second.foos"] {
 }
 ```
 
+### Object Mapping
+Here comes a Dictionary:
+```swift
+userGroup = ["users": [
+                [
+                    "id" : "1",
+                    "name" : "Apple",
+                    "age" : 18
+                ],
+                [
+                    "id" : "2",
+                    "name" : "Boy",
+                    "age" : 19
+                ],
+                [
+                    "id" : "3",
+                    "name" : "Cat",
+                    "age" : 30
+                ],
+            ]
+        ]
+```
+
+A User model:
+```swift
+struct User: JJMappable {
+    var id: String?
+    var name: String?
+    var age: Int
+
+    init(map: JJMapper) {
+        id = map[string: "id"]
+        name = map[string: "name"]
+        age = map[intValue: "age"]
+    }
+}
+```
+
+A UserGroup model:
+```swift
+struct UserGroup: JJMappable {
+    var users: [User]?
+
+    init(map: JJMapper) {
+        users = User.from(map[arrayValue: "users"])
+    }
+}
+```
+
+#### If you want to map a user
+```swift
+let data = userGroup[arrayValue: "users"][1] as! [String: Any]
+let user: User? = User.from(data)
+```
+
+#### If you want to get users
+```swift
+let users: [Users]? = User.from(userGroup[arrayValue: "users"])
+```
+
+#### Nested mapping
+```swift
+let _userGroup = UserGroup.from(userGroup)
+```
+
+
+
 ## More Exampes:
 [Test case](https://github.com/fattomhk/JustJSON/blob/master/Tests/JustJsonTests.swift)
 
