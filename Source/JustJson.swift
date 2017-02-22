@@ -57,7 +57,7 @@ extension String: StringProtocol {
 }
 
 public extension Dictionary where Key: StringProtocol {
-    subscript(keyPath keyPath: KeyPath) -> Any? {
+    public subscript(keyPath keyPath: KeyPath) -> Any? {
         get {
             switch keyPath.headAndTail() {
             case nil:
@@ -108,17 +108,17 @@ public extension Dictionary where Key: StringProtocol {
         }
     }
     
-    subscript(string keyPath: KeyPath) -> String? {
+    public subscript(string keyPath: KeyPath) -> String? {
         get { return self[keyPath: keyPath] as? String }
         set { self[keyPath: keyPath] = newValue }
     }
     
-    subscript(stringValue keyPath: KeyPath) -> String {
+    public subscript(stringValue keyPath: KeyPath) -> String {
         get { return self[string: keyPath] ?? "" }
         set { self[keyPath: keyPath] = newValue }
     }
     
-    subscript(int keyPath: KeyPath) -> Int? {
+    public subscript(int keyPath: KeyPath) -> Int? {
         get {
             if let str = self[keyPath: keyPath] as? String {
                 return Int(str)
@@ -128,14 +128,14 @@ public extension Dictionary where Key: StringProtocol {
         set { self[keyPath: keyPath] = newValue }
     }
     
-    subscript(intValue keyPath: KeyPath) -> Int {
+    public subscript(intValue keyPath: KeyPath) -> Int {
         get {
             return self[int: keyPath] ?? 0
         }
         set { self[keyPath: keyPath] = newValue }
     }
     
-    subscript(float keyPath: KeyPath) -> Float? {
+    public subscript(float keyPath: KeyPath) -> Float? {
         get {
             if let str = self[keyPath: keyPath] as? String {
                 return Float(str)
@@ -150,14 +150,14 @@ public extension Dictionary where Key: StringProtocol {
         set { self[keyPath: keyPath] = newValue }
     }
     
-    subscript(floatValue keyPath: KeyPath) -> Float {
+    public subscript(floatValue keyPath: KeyPath) -> Float {
         get {
             return self[float: keyPath] ?? 0
         }
         set { self[keyPath: keyPath] = newValue }
     }
     
-    subscript(double keyPath: KeyPath) -> Double? {
+    public subscript(double keyPath: KeyPath) -> Double? {
         get {
             if let str = self[keyPath: keyPath] as? String {
                 return Double(str)
@@ -167,7 +167,7 @@ public extension Dictionary where Key: StringProtocol {
         set { self[keyPath: keyPath] = newValue }
     }
     
-    subscript(doubleValue keyPath: KeyPath) -> Double {
+    public subscript(doubleValue keyPath: KeyPath) -> Double {
         get {
             return self[double: keyPath] ?? 0
         }
@@ -177,7 +177,7 @@ public extension Dictionary where Key: StringProtocol {
     /**
      Subscript array would return an optional array
      */
-    subscript(array keyPath: KeyPath) -> [Any]? {
+    public subscript(array keyPath: KeyPath) -> [Any]? {
         get { return self[keyPath: keyPath] as? [Any] }
         set { self[keyPath: keyPath] = newValue }
     }
@@ -185,17 +185,17 @@ public extension Dictionary where Key: StringProtocol {
     /**
      Subscript arrayValue would return an array
      */
-    subscript(arrayValue keyPath: KeyPath) -> [Any] {
+    public subscript(arrayValue keyPath: KeyPath) -> [Any] {
         get { return self[array: keyPath] ?? [Any]() }
         set { self[keyPath: keyPath] = newValue }
     }
     
-    subscript(dict keyPath: KeyPath) -> [Key: Any]? {
+    public subscript(dict keyPath: KeyPath) -> [Key: Any]? {
         get { return self[keyPath: keyPath] as? [Key: Any] }
         set { self[keyPath: keyPath] = newValue }
     }
     
-    subscript(dictValue keyPath: KeyPath) -> [Key: Any]? {
+    public subscript(dictValue keyPath: KeyPath) -> [Key: Any]? {
         get { return self[dict: keyPath] ?? [Key: Any]() }
         set { self[keyPath: keyPath] = newValue }
     }

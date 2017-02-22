@@ -27,43 +27,43 @@ public struct JJMapper {
         }
     }
     
-    subscript(_ path: KeyPath) -> Any? {
+    public subscript(_ path: KeyPath) -> Any? {
         return self.data[keyPath: path]
     }
     
-    subscript(string path: KeyPath) -> String? {
+    public subscript(string path: KeyPath) -> String? {
         return self.data[string: path]
     }
     
-    subscript(dict path: KeyPath) -> [String: Any]? {
+    public subscript(dict path: KeyPath) -> [String: Any]? {
         return self.data[dict: path]
     }
     
-    subscript(array path: KeyPath) -> [Any]? {
+    public subscript(array path: KeyPath) -> [Any]? {
         return self.data[array: path]
     }
     
-    subscript(arrayValue path: KeyPath) -> [Any] {
+    public subscript(arrayValue path: KeyPath) -> [Any] {
         return self.data[arrayValue: path]
     }
     
-    subscript(int path: KeyPath) -> Int? {
+    public subscript(int path: KeyPath) -> Int? {
         return self.data[int: path]
     }
     
-    subscript(intValue path: KeyPath) -> Int {
+    public subscript(intValue path: KeyPath) -> Int {
         return self.data[intValue: path]
     }
     
-    subscript(float path: KeyPath) -> Float? {
+    public subscript(float path: KeyPath) -> Float? {
         return self.data[float: path]
     }
     
-    subscript(floatValue path: KeyPath) -> Float {
+    public subscript(floatValue path: KeyPath) -> Float {
         return self.data[floatValue: path]
     }
     
-    subscript(doubleValue path: KeyPath) -> Double {
+    public subscript(doubleValue path: KeyPath) -> Double {
         return self.data[doubleValue: path]
     }
     
