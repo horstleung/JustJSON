@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        print(dict[keyPath: "translations.characters.Gyro Gearloose"] ?? "invalid dictionary")
+        print(dict[string: "translations.characters.Gyro Gearloose"] ?? "invalid dictionary")
         print(dict.toJSONStr() )
         print(dict.toJSONStr()?.toDictionary())
         

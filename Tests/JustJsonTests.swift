@@ -80,7 +80,7 @@ class JustJsonTests: XCTestCase {
     
     func testAppendString() {
         let appendVal = " foo foo foo"
-        dict[string: "translations.characters.Gyro Gearloose"]?.append(appendVal)
+        dict[stringValue: "translations.characters.Gyro Gearloose"].append(appendVal)
         let val = dict[string: "translations.characters.Gyro Gearloose"]
         XCTAssert(val == "Daniel Düsentrieb".appending(appendVal))
     }

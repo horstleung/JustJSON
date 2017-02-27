@@ -35,6 +35,10 @@ public struct JJMapper {
         return self.data[string: path]
     }
     
+    public subscript(stringValue path: KeyPath) -> String {
+        return self.data[string: path] ?? ""
+    }
+    
     public subscript(dict path: KeyPath) -> [String: Any]? {
         return self.data[dict: path]
     }

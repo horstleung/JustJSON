@@ -25,7 +25,7 @@ struct User: JJMappable {
     
     init(map: JJMapper) {
         id = map[string: "id"]!
-        name = map[string: "name"]!
+        name = map[stringValue: "name"]
         age = map[intValue: "age"]
     }
 }
