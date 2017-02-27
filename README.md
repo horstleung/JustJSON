@@ -13,6 +13,8 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+## Full Example
+You may find an example project [here](https://github.com/fattomhk/AppStore). It uses JustJSON to parse json data to data model.
 
 ## Requirements
 
